@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键帧动画</title>
+</head>
+<style>
+    @keyframes run {
+        0% {
+            position: relative;
+            left: 0;
+        }
+        25% {
+            position: relative;
+            left: 50px;
+        }
+        50% {
+            position: relative;
+            left: 100px;
+        }
+        75% {
+            position: relative;
+            left: 50px;
+        }
+        100% {
+            position: relative;
+            left: 0px;
+        }
+    }
+    .box {
+        width: 1000px;
+        height: 500px;
+        background-color: rgb(17, 0, 252);
+    }
+    div>img {
+        width: 500px;
+        height: 400px;
+        animation: run 20s steps(20,end) infinite;
+    }
+</style>
+<body>
+    <div class="box">
+        <img src="img/05.jpg" alt="">
+    </div>
+</body>
+</html>

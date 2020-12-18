@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        img {
+            width: 600px;
+            height: 600px;
+            display: inline-block;
+            margin-left: -5px;
+        }
+        img:nth-child(1) {
+            animation: run 30s infinite;
+        }
+        .container {
+            width: 600px;
+            height: 600px;
+            overflow: hidden;
+            margin: 0px auto;
+        }
+        .box {
+            width: 1200px;
+            height: 600px;
+        }
+        @keyframes run {
+            0% {
+                margin-left: 0px;
+            }
+            25% {
+                margin-left: -600px;
+            }
+            50% {
+                margin-left: -1200px;
+            }
+            75% {
+                margin-left: -1800px;
+            }
+            100% {
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img/05.jpg" alt="">
+            <img src="img/06.jpg" alt="">
+            <img src="img/07.jpg" alt="">
+            <img src="img/08.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

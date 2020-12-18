@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转照片墙</title>
+    <style>
+        @keyframes run {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            } 
+        }
+        div {
+            margin: 0px auto;
+            transform-style: preserve-3d;
+            animation: run 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="photo1" src="img/01.jpg" />
+        <img id="photo2" src="img/02.jpg" />
+        <img id="photo3" src="img/03.jpg" />
+        <img id="photo4" src="img/04.jpg" />
+    </div>
+</body>
+</html>
